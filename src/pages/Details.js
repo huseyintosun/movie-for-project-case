@@ -24,6 +24,7 @@ export default function Details() {
     // Filtered Array
     return (
         <Card
+            key={arrById?.id}
             height="100%"
             sx={{ maxWidth: "80%", textAlign: "center", justifyContent: "center", m: "10%", mt: 0 }}>
             <CardMedia
