@@ -49,7 +49,7 @@ export default function Details() {
                 </Typography>
             </CardContent>
             {!arrById?.v ? null : arrById?.v?.map((item) => (
-                <>
+                <div key={item?.id}>
                     <CardMedia
                         component="img"
                         height="%50"
@@ -59,7 +59,7 @@ export default function Details() {
                     <Typography gutterBottom variant="h6" component="div">
                         {item?.l}
                     </Typography>
-                </>
+                </div>
             ))}
             <CardActions height="%100" disableSpacing>
                 <IconButton size="large" onClick={() => {
